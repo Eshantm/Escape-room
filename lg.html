@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="lg.js"></script>
+    <link href="lg.css" rel="Stylesheet" type="text/css"/>
+  </head>
+  <body>
+  <div id="login-box">
+   <div class="left">
+    <h1 class="head">Sign up</h1>
+
+    <input type="text" id="username" placeholder="&#128100; Username" />
+    <input type="text" id="email" placeholder="&#9993; E-mail" />
+    <input type="password" id="password" placeholder="&#10002; Password" />
+
+    <button class="sub" type="submit" name="signup_submit" value="Sign me up" onclick="signUp()">Sign me Up</button>
+  </div>
+
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+
+    <button onclick="facebook()" class="social-signin facebook" >Log in with facebook</button>
+    <button onclick="github()" class="social-signin github" >Log in with github</button>
+    <button onclick="google()" class="social-signin google" >Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+  </body>
+</html>
